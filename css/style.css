@@ -9,21 +9,24 @@
   width: 100%;
   font-size: 40px;
   letter-spacing: 10px;
-  padding-top: 50px;
   text-align: center;
 }
 
 /* hedder */
+header{
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 2;
+}
 .header_inner{
   width: 80%;
   margin: 0 auto;
+  padding: 15px 0;
   background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header_inner_logo{
-  margin-top: 15px;
 }
 .fas,.contanct_btn{
   text-decoration: none;
@@ -43,7 +46,7 @@
 
 /* keyvisual */
 .keyvisual{
-  margin-top: 15px;
+  padding-top: 78px;
   height: 935px;
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   position: relative;
@@ -69,13 +72,14 @@
 /* work */
 .work{
   background: #e3f2fb;
-  padding: 50px 200px 0 200px;
+  padding-top: 50px;
 }
 .work_inner{
   display: flex;
 }
 .work_inner_img{
   width: 40%;
+  text-align: center;
 }
 .work_inner_img img{
   width: 250px;
@@ -97,6 +101,10 @@
 /* skills */
 .skills{
   background: #fff;
+  padding: 50px 0 70px;
+}
+.skills_inner{
+  margin-top: 50px;
 }
 .skills_img{
   display: flex;
@@ -105,13 +113,14 @@
   align-items: center;
 }
 .img_area{
-  margin: 50px 0px 50px 100px;
+  margin: 0 0 100px 100px;
 }
+
 .img_area:nth-child(1),.img_area:nth-child(4){
   margin-left: 0;
 }
 .img_area:nth-child(4),.img_area:nth-child(5),.img_area:nth-child(6){
-  margin-bottom: 70px;
+  margin-bottom: 0;
 }
 .img_area > img{
   display: block;
@@ -127,6 +136,7 @@
 /* plan */
 .plan{
   background: #d0dfea;
+  padding-top: 50px;
 }
 .plan_inner{
   margin-top: 50px;
