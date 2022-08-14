@@ -10,6 +10,9 @@
   letter-spacing: 10px;
   text-align: center;
 }
+main{
+  width: 100%;
+}
 
 /* hedder */
 header{
@@ -166,10 +169,8 @@ tr > th {
 /* sns */
 .sns{
   background: #e3f2fd;
-  height: 490px;
 }
 .sns_inner{
-  height: 100%;
   display: flex;
   justify-content: center;
   padding: 200px 0;
@@ -188,6 +189,8 @@ tr > th {
 .fab:hover,.fa:hover{
   background: #fff;
 }
+
+/* footer */
 footer{
   background: #cfd8dc;
 }
@@ -200,10 +203,125 @@ footer{
 }
 
 
+/*----- TAB-style --------*/
+@media screen and (max-width:1199px) {
+/* 共通 */
+  .inner{
+    width: auto;
+  }
+  header,footer{
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+/* keyvisual */
+  .keyvisual_img{
+    padding: 250px 0;
+  }
+
+/* work */
+  .work{
+  padding-bottom: 50px;
+  }
+  .work_inner{
+    display: block;
+  }
+  .work_inner_img{
+    width: 100%;
+  }
+  .work_inner_content{
+    width: 100%;
+  }
+  .work_inner_text{
+    padding: 0 15px;
+  }
+
+/* skills */
+  .skills_area{
+    display: block;
+    flex-wrap: nowrap;
+    }
+  .img_area{
+    margin-left: 0;
+  }
+  .img_area:nth-child(n+4){
+    margin-top: 0px;
+  }
+  .img_area:nth-child(3n+3){
+    margin-bottom: 80px;
+  }
+  .img_area > a > img{
+    margin: auto;
+  }
+
+/* footer */
+.copyright{
+  width: 100%;
+}
+}
 
 
+/* ------SP-style ------*/
+@media screen and (max-width:767px) {
+/* header */
+  .header_inner_nav{
+    display: none;
+  }
+  .burger_btn{
+    display: block;
+    width: 45px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+  }
+  .burger_btn > span {
+    display: block;
+    border: 1px solid #ccc;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+  }
+  .burger_btn > span:nth-child(1){
+    transform: translate(-50%,-10px);
+  }
+  .burger_btn > span:nth-child(3){
+    transform: translate(-50%,9px);
+  }
 
+/* keyvisual */
+  .keyvisual_img{
+    padding: 200px 0;
+  }
+  .main_copy{
+    font-size: 40px;
+  }
+  .keyvisual_text{
+    font-size: 30px;
+  }
 
+/* plan */
+  th{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  td{
+    font-size: 12px;
+  }
 
-
-
+/* sns */
+  .sns_inner{
+    display: block;
+    padding: 50px 15px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .fab,.fa{
+    width: 100%;
+    padding: 50px 0;
+  }
+}
