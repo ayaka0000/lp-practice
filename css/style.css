@@ -45,8 +45,11 @@ header{
 
 /* keyvisual */
 .keyvisual{
-  padding: 478px 0 400px;
+  padding-top: 78px;
+}
+.keyvisual_img{
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
+  padding: 400px 0;
 }
 .keyvisual_inner{
   text-align: center;
@@ -100,7 +103,7 @@ header{
 .skills_inner{
   margin-top: 50px;
 }
-.skills_item{
+.skills_area{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
