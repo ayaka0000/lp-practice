@@ -221,7 +221,7 @@ footer{
 
 /* work */
   .work{
-  padding-bottom: 50px;
+  padding: 50px 10px;
   }
   .work_inner{
     display: block;
@@ -231,9 +231,6 @@ footer{
   }
   .work_inner_content{
     width: 100%;
-  }
-  .work_inner_text{
-    padding: 0 15px;
   }
 
 /* skills */
@@ -252,6 +249,11 @@ footer{
   }
   .img_area > a > img{
     margin: auto;
+  }
+
+/* plan */
+  .plan{
+    padding: 50px 10px 0;
   }
 
 /* footer */
