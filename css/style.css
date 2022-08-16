@@ -107,10 +107,8 @@ header{
   margin-top: 50px;
 }
 .skills_area{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 }
 .img_area{
@@ -207,7 +205,8 @@ footer{
 @media screen and (max-width:1199px) {
 /* 共通 */
   .inner{
-    width: auto;
+    width: 100%;
+    max-width: 1199px;
   }
   header,footer{
     box-sizing: border-box;
@@ -251,20 +250,20 @@ footer{
     margin: auto;
   }
 
-/* plan */
-  .plan{
-    padding: 50px 10px 0;
-  }
-
 /* footer */
-.copyright{
-  width: 100%;
-}
+  .copyright{
+    width: 100%;
+  }
 }
 
 
 /* ------SP-style ------*/
 @media screen and (max-width:767px) {
+/* 共通 */
+  .inner{
+    max-width: 767px;
+  }
+
 /* header */
   .header_inner_nav{
     display: none;
