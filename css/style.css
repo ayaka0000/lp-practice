@@ -142,10 +142,9 @@ header{
   padding-bottom: 50px;
 }
 .plan_table{
-  display: table;
+  table-layout: auto;
   width: 100%;
   text-align: center;
-  border-collapse: collapse;
 }
 th,td{
   padding: 10px;
